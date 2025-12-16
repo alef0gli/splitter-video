@@ -18,7 +18,7 @@ def split_video(file_path):
     try:
         file_size_gb = os.path.getsize(file_path) / (1024 ** 3)
         #max_chunk_size_gb = 48
-        max_chunk_size_gb = 16
+        max_chunk_size_gb = 8
         if file_size_gb > max_chunk_size_gb:
             print(f"Splitting video: {file_path}")
 
